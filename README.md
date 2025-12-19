@@ -1,16 +1,16 @@
-# 📈 Bitcoin Algorithmic Trading with Stacked GRU
+# 비트코인 가격 예측 및 트레이딩 전략 프로젝트 📈💰
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat&logo=python)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-red?style=flat&logo=pytorch)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 ![Return](https://img.shields.io/badge/Return-32.38%25-brightgreen?style=flat)
 
-> **Deep Learning 기반 시계열 예측 및 동적 임계값(Dynamic Threshold) 트레이딩 전략 프로젝트** > 12주차 시계열 예측 과제 제출용 리포트입니다.
+> **딥러닝 기반 시계열 예측 및 동적 임계값(Dynamic Threshold) 트레이딩 전략 프로젝트** > 비즈니스 딥너링 최종 과제 제출용 리포트입니다.
 
 ---
 
 ## 📋 1. Project Overview (프로젝트 개요)
-본 프로젝트는 변동성이 심한 비트코인(BTC) 시장에서 **안정적인 초과 수익(Alpha)**을 달성하기 위해 설계되었습니다.
+본 프로젝트는 변동성이 심한 비트코인(BTC) 시장에서 안정적인 초과 수익(Alpha)을 달성하기 위해 설계되었습니다.
 단순한 LSTM 모델의 한계를 넘어 **Stacked GRU** 아키텍처를 도입했으며, 예측 확률의 상대적 우위를 활용한 **동적 임계값(Dynamic Threshold) 전략**을 통해 하락장에서도 수익을 방어하는 알고리즘을 구현했습니다.
 
 * **Target:** Bitcoin (BTC/USD) Daily Close Price
@@ -21,7 +21,7 @@
 
 ## 🏗️ 2. Model Architecture (모델 설계)
 
-기존의 단층 LSTM 모델 대신, **Stacked GRU (2-Layer Gated Recurrent Unit)**를 채택하여 모델의 표현력을 극대화했습니다.
+기존의 단층 LSTM 모델 대신, Stacked GRU (2-Layer Gated Recurrent Unit)를 채택하여 모델의 표현력을 극대화했습니다.
 
 | Layer | Configuration | Description |
 | :--- | :--- | :--- |
@@ -39,7 +39,7 @@
 
 ## ⚡ 3. Investment Strategy (투자 전략)
 
-모델의 예측값(Score) 절대치에 의존하지 않고, **데이터 분포의 상대적 순위(Percentile)**를 활용한 **"Dynamic Threshold & Hysteresis"** 전략을 독자적으로 개발했습니다.
+모델의 예측값(Score) 절대치에 의존하지 않고, 데이터 분포의 상대적 순위(Percentile)를 활용한 **"Dynamic Threshold & Hysteresis"** 전략을 독자적으로 개발했습니다.
 
 ### 📊 전략 로직 (Logic)
 1.  **Dynamic Buy (진입):** 예측 확률 **상위 20%** 구간 (High Confidence) 진입
