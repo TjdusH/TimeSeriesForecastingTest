@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 ![Return](https://img.shields.io/badge/Return-32.38%25-brightgreen?style=flat)
 
-> **딥러닝 기반 시계열 예측 및 동적 임계값(Dynamic Threshold) 트레이딩 전략 프로젝트** > 비즈니스 딥너링 최종 과제 제출용 리포트입니다.
+> **딥러닝 기반 시계열 예측 및 동적 임계값(Dynamic Threshold) 트레이딩 전략 프로젝트** > 비즈니스 딥러닝 최종 과제 제출용 리포트입니다.
 
 ---
 
